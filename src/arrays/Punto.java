@@ -4,7 +4,8 @@ package arrays;
 
 public class Punto {
     
-    private int x, y;
+    //Me he dado cuenta tarde de que debían ser doubles
+    private double x, y, distancia;
     
     //Constructor de la clase Punto
     public Punto(int x, int y){
@@ -13,15 +14,20 @@ public class Punto {
     }
     
     //Metodos get
-     public int getX(){
+     public double getX(){
         return x;   
     }
-    public int getY(){
+    public double getY(){
         return y;
     }
     
     //Metodo toString
     public String toString(){
         return("("+x+","+y+")");
+    }
+    
+    public double distancia(double x1, double x2, double y1, double y2){
+        distancia=Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));
+        return distancia;
     }
 }

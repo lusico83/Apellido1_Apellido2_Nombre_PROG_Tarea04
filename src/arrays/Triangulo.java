@@ -7,6 +7,7 @@ public class Triangulo {
     private Punto verticeB;
     private Punto verticeC;
     private String puntos;
+    private double perimetro;
     
     
     public Triangulo(Punto verticeA, Punto verticeB, Punto verticeC){
@@ -34,5 +35,9 @@ public class Triangulo {
         return puntos;
     }
     
+    public double perimetro(Punto verticeA, Punto verticeB, Punto vertice3){
+    perimetro=((verticeA.distancia(verticeA.getX(), verticeB.getX(), verticeA.getY(), verticeB.getY()))+(verticeA.distancia(verticeA.getX(), verticeC.getX(), verticeA.getY(), verticeC.getY()))+(verticeA.distancia(verticeC.getX(), verticeB.getX(), verticeC.getY(), verticeB.getY())));
+    return perimetro;
+    }
     
 }

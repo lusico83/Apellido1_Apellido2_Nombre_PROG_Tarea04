@@ -6,6 +6,7 @@ public class Triangulo {
     private Punto verticeA;
     private Punto verticeB;
     private Punto verticeC;
+    private String puntos;
     
     
     public Triangulo(Punto verticeA, Punto verticeB, Punto verticeC){
@@ -26,6 +27,11 @@ public class Triangulo {
     
     public Punto getVerticeC(){
         return verticeC;
+    }
+    
+    public String toString(){
+        puntos=("A("+verticeA.getX()+","+verticeA.getY()+"),B("+verticeB.getX()+","+verticeB.getY()+"),C("+verticeC.getX()+","+verticeC.getY()+")");
+        return puntos;
     }
     
     

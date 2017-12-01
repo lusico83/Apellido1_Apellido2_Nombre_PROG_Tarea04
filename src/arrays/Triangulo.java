@@ -18,7 +18,7 @@ public class Triangulo {
         
     }
     
-    public Punto getVerticeA(){
+    public Punto getVerticea(){
         return verticeA;
     }
     
@@ -26,7 +26,7 @@ public class Triangulo {
         return verticeB;
     }
     
-    public Punto getVerticeC(){
+    public Punto getVerticec(){
         return verticeC;
     }
     

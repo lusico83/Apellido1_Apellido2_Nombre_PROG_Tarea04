@@ -19,4 +19,9 @@ public class Punto {
     public int getY(){
         return y;
     }
+    
+    //Metodo toString
+    public String toString(){
+        return("("+x+","+y+")");
+    }
 }
